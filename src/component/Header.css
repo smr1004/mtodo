@@ -1,0 +1,12 @@
+.Header h2 {
+  color: black;
+  margin-bottom: 0;
+}
+.Header h3 {
+  font-style: italic;
+  font: 1em sans-serif;
+  display: flex;
+  border-color: aqua;
+  color: rgb(36, 3, 255);
+  margin-bottom: 0;
+}

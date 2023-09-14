@@ -18,7 +18,7 @@ function TodoItem(props) {
           onUpdate(id);
         }}
         className="checkbox"
-        checked={isDone}
+        checked={checked}
       />
       <div className="title">{content}</div>
       <div className="date">{new Date(createdDate).toLocaleDateString()}</div>
