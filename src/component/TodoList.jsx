@@ -44,7 +44,7 @@ function TodoList() {
         <div>
           <div>총 할 일 개수 : {totalCount} ,</div>
           <div>
-            완료된 일 : {doneCount}, 미완료 할 일 : {dontCount} ,
+            완료된 일 : {doneCount},{'  '} 미완료 할 일 : {dontCount} ,
           </div>
         </div>
         <input
