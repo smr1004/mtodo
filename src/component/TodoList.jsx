@@ -3,6 +3,7 @@ import TodoItem from './TodoItem';
 import { useState, useMemo, useContext } from 'react';
 import { TodoContext } from '../App';
 
+// 2023.9.14.
 // 할 일 목록을 랜더링 (검색 결과)
 function TodoList() {
   const { todo, onUpdate, onDelete } = useContext(TodoContext);
@@ -19,6 +20,7 @@ function TodoList() {
     const dontCount = totalCount - doneCount;
     return { totalCount, doneCount, dontCount };
   }, [todo]);
+
   // useMemo 를 사용할 경우 analyzeTodo 는 더 이상 함수가 아니라
   // 객체를 가지고 있는 변수가 된다.호출은 지워준다.
   const { totalCount, doneCount, dontCount } = analyzeTodo;
