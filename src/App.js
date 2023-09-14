@@ -1,15 +1,8 @@
 import './App.css';
 import Header from './component/Header';
-// import TestComp from './component/TestComp';
 import TodoEditor from './component/TodoEditor';
 import TodoList from './component/TodoList';
-import React, {
-  useState,
-  useRef,
-  useReducer,
-  useCallback,
-  createContext,
-} from 'react';
+import React, { useRef, useReducer, useCallback } from 'react'; //useState ,createContext
 
 export const TodoContext = React.createContext();
 // 2023.9.14.
