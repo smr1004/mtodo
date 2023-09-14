@@ -15,4 +15,3 @@ function Header() {
 // 강화된 컴포넌트(메모이제이션된 컴포넌트)를 반환
 // export default React.memo(Header);
 export default memo(Header);
-// export default Header;

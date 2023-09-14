@@ -23,13 +23,14 @@ export const TodoContext = React.createContext();
 // 최적화 주의 사항 : 모든것을 최적화 할 필요는 없다.많은 연산을 수행하는 경우, 부하가 많은 경우, 반복적인 수행이 잦은 경우 사용.
 // 최적화 전에 설계를 돌아 볼 것.-최적화는 마지막에 할 것.
 // 데이터 모델링하기
-
+/*
 const item = {
   id: 0, // 식별자
   checked: false, // bool 완료여부
   content: '할 일', // string 할 일
   createdDate: new Date().getTime(), // timestamp 생성시간
 };
+*/
 const mockTodo = [
   // 임시 데이터 만들기 Mock
   {
@@ -57,7 +58,7 @@ function reducer(state, action) {
     case 'CREATE': {
       return [action.item, ...state];
     }
-    //  [{id,isDone,content,date},{},{}...]
+
     case 'UPDATE': {
       return state.map((item) =>
         item.id === action.id ? { ...item, checked: !item.checked } : item
@@ -87,7 +88,9 @@ function App() {
         createDate: new Date().getTime(), //timestamp 생성 시간
       },
     });
-    /*  const item={
+    idRef.current += 1; // 식별자 번호를 변경
+  };
+  /*  const item={
   id: idRef.current,     //식별자,idRef로 받음.
   checked: false,   //bool 완료 여부
   content,  // content: content 변수명 : 변수값, string 할 일
@@ -98,19 +101,20 @@ function App() {
     idRef.current += 1; // 식별자 번호를 변경
   };
 */
-    // useCallback Hook => 함수가 리랜더링될때 다시 생성되지 않도록 메모이제이션하는 훅 useCallback (콜백함수,의존성배열)
-    // 수정 (Update) 함수 => props 로 전달
-    const onUpdate = useCallback((id) => {
-      dispatch({
-        type: 'UPDATE',
-        id,
-      });
-      // todo : [{id,content,checked},{},{}... ]
-      /* setTodo(todo.map((item) => 
+  // useCallback Hook => 함수가 리랜더링될때 다시 생성되지 않도록 메모이제이션하는 훅 useCallback (콜백함수,의존성배열)
+  // 수정 (Update) 함수 => props 로 전달
+
+  const onUpdate = useCallback((id) => {
+    dispatch({
+      type: 'UPDATE',
+      id,
+    });
+    // todo : [{id,content,checked},{},{}... ]
+    /* setTodo(todo.map((item) => 
     //  해당 아이템 일 경우, isDone 을 논리연산자(Not) 으로 불리언 값을 변경
     //  스프레드 연산자로 변경 */
-      // item.id === id ? { ...item, checked: !item.checked } : item;
-      /*  if(item.id === id){
+    // item.id === id ? { ...item, checked: !item.checked } : item;
+    /*  if(item.id === id){
       return {
        ...item,
         checked: !item.checked,
@@ -119,31 +123,31 @@ function App() {
       return item;
     }  
      )); */
-    }, []);
+  }, []);
 
-    // 삭제 (Delete) 함수
-    // 배열에서 아이템 삭제 하기, 상태 변경 함수,filter 함수
-    // 삭제 버튼을 클릭한 아이템의 id 의 아이템만 배열에서 걸러낸 새 배열
-    const onDelete = useCallback((id) => {
-      // setTodo(todo.filter((item)=> item.id !==id)) ;
-      dispatch({ type: 'DELETE', id });
-    }, []);
+  // 삭제 (Delete) 함수
+  // 배열에서 아이템 삭제 하기, 상태 변경 함수,filter 함수
+  // 삭제 버튼을 클릭한 아이템의 id 의 아이템만 배열에서 걸러낸 새 배열
+  const onDelete = useCallback((id) => {
+    // setTodo(todo.filter((item)=> item.id !==id)) ;
+    dispatch({ type: 'DELETE', id });
+  }, []);
 
-    return (
-      <div className="App">
-        {/* <TestComp /> */}
-        <Header />
-        {/* Context 의 공급자를 통해 데이터를 전달하고,하위 콤포넌트는 props 가 필요 없게 됨 */}
-        <TodoContext.Provider value={{ todo, onCreate, onUpdate, onDelete }}>
-          {/* props로 생성함수 전달 */}
-          {/* <TodoEditor onCreate = {onCreate}/> */}
-          <TodoEditor />
-          {/* todo props 로 할 일 목록 전달 */}
-          {/* <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} /> */}
-          <TodoList />
-        </TodoContext.Provider>
-      </div>
-    );
-  };
+  return (
+    <div className="App">
+      {/* <TestComp /> */}
+      <Header />
+      {/* Context 의 공급자를 통해 데이터를 전달하고,하위 콤포넌트는 props 가 필요 없게 됨 */}
+      <TodoContext.Provider value={{ todo, onCreate, onUpdate, onDelete }}>
+        {/* props로 생성함수 전달 */}
+        {/* <TodoEditor onCreate = {onCreate}/> */}
+        <TodoEditor />
+        {/* todo props 로 할 일 목록 전달 */}
+        {/* <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} /> */}
+        <TodoList />
+      </TodoContext.Provider>
+    </div>
+  );
 }
+
 export default App;
