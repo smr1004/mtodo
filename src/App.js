@@ -36,19 +36,19 @@ const mockTodo = [
   {
     id: 0,
     checked: false,
-    content: '할 일 1',
+    content: '',
     createDate: new Date().getTime(),
   },
   {
     id: 1,
     checked: false,
-    content: '할 일 2',
+    content: '할 일 하기 1',
     createDate: new Date().getTime(),
   },
   {
     id: 2,
     checked: false,
-    content: '할 일 3',
+    content: '할 일 하기 2',
     createDate: new Date().getTime(),
   },
 ];
@@ -103,7 +103,6 @@ function App() {
 */
   // useCallback Hook => 함수가 리랜더링될때 다시 생성되지 않도록 메모이제이션하는 훅 useCallback (콜백함수,의존성배열)
   // 수정 (Update) 함수 => props 로 전달
-
   const onUpdate = useCallback((id) => {
     dispatch({
       type: 'UPDATE',

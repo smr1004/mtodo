@@ -6,7 +6,8 @@
   max-width: 500px;
   padding: 20px;
   margin: 0 auto;
-  border: 3px solid gray;
+  border: 3px solid rgb(2, 108, 2);
+  background-color: antiquewhite;
 }
 
 /*
