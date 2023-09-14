@@ -1,0 +1,21 @@
+.TodoList .searchbar {
+  flex: 1;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.TodoList input :focus {
+  outline: none;
+  border-bottom: 1px solid green;
+}
+
+.TodoList .list_wrapper {
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
