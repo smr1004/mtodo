@@ -29,7 +29,7 @@ const mockTodo = [
   {
     id: 0,
     checked: false,
-    content: '',
+    content: '할 일 ',
     createDate: new Date().getTime(),
   },
   {
