@@ -39,7 +39,6 @@ function TodoList() {
 
     return (
       <div className="TodoList">
-        {/* <h4> 할 일 목록</h4> */}
         {/* 분석 */}
         <div>
           <div>총 할 일 개수 : {totalCount} ,</div>
