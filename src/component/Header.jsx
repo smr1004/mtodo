@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import './Header.css';
-
+// 2023.9.14.
 // const Header =(Header) =>{}
 function Header() {
   console.log('헤더 리랜더링');
