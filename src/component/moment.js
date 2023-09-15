@@ -9,4 +9,10 @@ moment().format('YYYY-MM-DD');
 moment().format('hh:mm:ss');
 moment().format('dddd');
 
+moment(updateDate).fromNow();
+moment('20230202', 'YYYYMMDD').fromNow();
+moment().startOf('day').fromNow(); //한시간전
+moment().endOf('day').fromNow(); //하루후
+moment().startOf('hour').fromNow(); //32분전
+
 export default moment;
