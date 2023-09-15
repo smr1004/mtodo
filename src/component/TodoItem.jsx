@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './TodoItem.css';
 import { TodoContext } from '../App';
+import moment from 'moment';
 
 // 할일  아이템 삭제
 function TodoItem(props) {
@@ -21,7 +22,8 @@ function TodoItem(props) {
         checked={checked}
       />
       <div className="title">{content}</div>
-      <div className="date">{new Date(createdDate).toLocaleDateString()}</div>
+      {/* <div className="date">{new Date(createdDate).toLocaleDateString()}</div> */}
+      <div className="date">{moment(createdDate).format('YYYY-MM-DD')}</div>
       <button
         className="btn"
         onClick={() => {
