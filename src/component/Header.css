@@ -1,7 +1,11 @@
 .Header h2 {
-  font: 1.2em sans-serif;
+  font: 1.15rem sans-serif;
   color: rgb(18, 2, 163);
   margin-bottom: 0;
+}
+.moment {
+  font: 1em sans-serif;
+  color: rgb(248, 2, 2);
 }
 .Header h3 {
   font: 1.5em sans-serif;
