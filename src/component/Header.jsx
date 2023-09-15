@@ -3,7 +3,9 @@ import './Header.css';
 // 2023.9.14.
 // const Header =(Header) =>{}
 function Header() {
-  console.log('헤더 리랜더링');
+  const week = ['월', '화', '수', '목', '금', '토', '일'];
+  week = [4];
+  console.log('Header');
   return (
     <div className="Header">
       <h3> 일정 관리 </h3>
