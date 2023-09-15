@@ -4,17 +4,16 @@ import './Header.css';
 // const Header =(Header) =>{}
 function Header() {
   /*const weeks = ['월', '화', '수', '목', '금', '토', '일'];
-  weeks().week();
-  week = [5];
+  weeks().day('dddd');
+  day = [5];
 */
   console.log('헤더리랜더링');
   return (
     <div className="Header">
       <h3> 일정 관리 </h3>
       <h2>
-        <p>오늘 날짜 : </p>
-        {new Date().toLocaleDateString()}
-        {new Date().week()}
+        오늘 날짜 :{new Date().toLocaleDateString()}
+        {/* {new Date().day()} */}
       </h2>
     </div>
   );
