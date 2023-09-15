@@ -1,4 +1,5 @@
-import moment from 'moment/moment.css';
+import moment from 'moment';
+import './moment.css';
 import 'moment/locale/ko';
 
 // 2023.9.15(금)
