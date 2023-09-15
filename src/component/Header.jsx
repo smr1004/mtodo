@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import './Header.css';
 import moment from 'moment';
-import './moment.css';
 
 // 2023.9.14.
 // const Header =(Header) =>{}
