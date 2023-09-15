@@ -9,7 +9,7 @@ function Header() {
   weeks().day('dddd');
   day = [5];*/
 
-  console.log('헤더리랜더링');
+  console.log('헤더 리랜더링');
   return (
     <div className="Header">
       <h3> 일정 관리 </h3>
