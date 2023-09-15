@@ -39,6 +39,7 @@ function TodoEditor() {
           onKeyDown={onKeyDownHandler}
           type="text"
           placeholder="할 일을 입력하세요 ."
+          date={new Date().getTime()}
         />
         <button onClick={onSubmitHandler}>추가</button>
       </div>

@@ -14,7 +14,8 @@ function Header() {
     <div className="Header">
       <h3> 일정 관리 </h3>
       <h2>
-        오늘 날짜 :{new Date().toLocaleDateString()}
+        <span style={{ color: 'rgba(128,0,0)' }}>오늘 날짜 : </span>
+        {new Date().toLocaleDateString()}
         {moment().format('dddd')}
       </h2>
     </div>
