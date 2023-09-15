@@ -3,16 +3,18 @@ import './Header.css';
 // 2023.9.14.
 // const Header =(Header) =>{}
 function Header() {
-  const week = ['월', '화', '수', '목', '금', '토', '일'];
-  week = [4];
-  console.log('Header');
+  const weeks = ['월', '화', '수', '목', '금', '토', '일'];
+  weeks().day();
+  day = [5];
+
+  console.log('헤더리랜더링');
   return (
     <div className="Header">
       <h3> 일정 관리 </h3>
       <h2>
         <p>오늘 날짜 : </p>
         {new Date().toLocaleDateString()}
-        {week}
+        {day}
       </h2>
     </div>
   );
