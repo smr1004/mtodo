@@ -1,11 +1,12 @@
 import React, { memo } from 'react';
 import './Header.css';
+import moment from 'moment';
 // 2023.9.14.
 // const Header =(Header) =>{}
 function Header() {
-  const weeks = ['월', '화', '수', '목', '금', '토', '일'];
+  /* const weeks = ['월', '화', '수', '목', '금', '토', '일'];
   weeks().day('dddd');
-  day = [5];
+  day = [5];*/
 
   console.log('헤더리랜더링');
   return (
@@ -13,7 +14,7 @@ function Header() {
       <h3> 일정 관리 </h3>
       <h2>
         오늘 날짜 :{new Date().toLocaleDateString()}
-        {new Date().day()}
+        {moment().format('dddd')}
       </h2>
     </div>
   );
