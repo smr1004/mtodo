@@ -20,6 +20,7 @@ function TodoEditor() {
       return; //이벤트를 실행하지 말고, 함수 종료
     }
     onCreate(content);
+    moment().format('YYYY-MM-DD');
     setContent(''); // 입력 초기화
   };
   // 키를 입력받았을 때(Enter) 제출 이벤트 실행
