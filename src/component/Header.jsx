@@ -7,7 +7,11 @@ function Header() {
   return (
     <div className="Header">
       <h3> 일정 관리 </h3>
-      <h2> 오늘 날짜 : {new Date().toLocaleDateString()}</h2>
+      <h2>
+        <p>오늘 날짜 : </p>
+        {new Date().toLocaleDateString()}
+        {week}
+      </h2>
     </div>
   );
 }
