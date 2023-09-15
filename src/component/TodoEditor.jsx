@@ -1,6 +1,7 @@
 import React, { useState, useRef, useContext } from 'react';
 import './TodoEditor.css';
 import { TodoContext } from '../App';
+import moment from 'moment';
 
 // 새로운 할 일 생성
 function TodoEditor() {
@@ -38,8 +39,8 @@ function TodoEditor() {
           onChange={onChangeHandler}
           onKeyDown={onKeyDownHandler}
           type="text"
+          date={moment().format('YYYY-MM-DD')}
           placeholder="할 일을 입력하세요 ."
-          date={new Date().getTime()}
         />
         <button onClick={onSubmitHandler}>추가</button>
       </div>
