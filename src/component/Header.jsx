@@ -14,7 +14,7 @@ function Header() {
       <h2>
         <p>오늘 날짜 : </p>
         {new Date().toLocaleDateString()}
-        {day}
+        {new Date().day()}
       </h2>
     </div>
   );
