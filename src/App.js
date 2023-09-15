@@ -3,6 +3,7 @@ import Header from './component/Header';
 import TodoEditor from './component/TodoEditor';
 import TodoList from './component/TodoList';
 import React, { useRef, useReducer, useCallback } from 'react'; //useState ,createContext
+import moment from '../moment';
 
 export const TodoContext = React.createContext();
 // 2023.9.14.
@@ -30,7 +31,8 @@ const mockTodo = [
     id: 0,
     checked: false,
     content: '할 일 ',
-    createDate: new Date().getTime(),
+    // createDate: new Date().getTime(),
+    createDate: moment().format('YYYY-MM-DD'),
   },
   {
     id: 1,
