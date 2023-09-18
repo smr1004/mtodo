@@ -17,14 +17,7 @@ export const TodoContext = React.createContext();
 // 최적화 주의 사항 : 모든것을 최적화 할 필요는 없다.많은 연산을 수행하는 경우, 부하가 많은 경우, 반복적인 수행이 잦은 경우 사용.
 // 최적화 전에 설계를 돌아 볼 것.-최적화는 마지막에 할 것.
 // 데이터 모델링하기
-/*
-const item = {
-  id: 0, // 식별자
-  checked: false, // bool 완료여부
-  content: '할 일', // string 할 일
-  createdDate: new Date().getTime(), // timestamp 생성시간
-};
-*/
+
 const mockTodo = [
   // 임시 데이터 만들기 Mock
   {
