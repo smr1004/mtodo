@@ -11,6 +11,7 @@ function TodoItem(props) {
   const { onUpdate, onDelete } = useContext(TodoContext);
 
   console.log(` ${id} TodoItem update`);
+
   return (
     <div className="TodoItem">
       <input

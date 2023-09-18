@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useState, useEffect } from 'react';
 import './Header.css';
 import moment from 'moment';
 
@@ -8,16 +8,32 @@ function Header() {
   /* const weeks = ['월', '화', '수', '목', '금', '토', '일'];
   weeks().day('dddd');
   day = [5];*/
+  const [date, setDate] = useState(moment().format());
+  useEffect(() => {
+    if (date) {
+      // setDate(getFormatDate(new Date()));
+      setDate(moment().format());
+      // setContent(initData.content);
+    }
+  }, []);
+  const handleOnChange = (event) => {
+    setDate(event.target.value);
+  };
 
   console.log('헤더 리랜더링');
   return (
     <div className="Header">
-      <h3> 일정 관리 </h3>
-      <h2>
+      <h2> 일정 관리 </h2>
+      <h3>
         <span style={{ color: 'rgba(128,0,0)' }}>오늘 날짜 : </span>
         {new Date().toLocaleDateString()}
         {moment().format('dddd')}
-      </h2>
+        <input
+          type="date"
+          value={date}
+          onChange={handleOnChange}
+        />
+      </h3>
     </div>
   );
 }
