@@ -1,4 +1,3 @@
-/* 2023.9.18.(월) */
 .Header h2 {
   font: 1.5em sans-serif;
   display: flex 1;
@@ -17,4 +16,6 @@
   font: 1.15rem sans-serif;
   color: rgb(18, 2, 163);
   margin-bottom: 0;
+  display: contents;
+  justify-content: center;
 }
