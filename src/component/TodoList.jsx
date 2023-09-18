@@ -41,7 +41,7 @@ function TodoList() {
     return (
       <div className="TodoList">
         {/* 분석 */}
-        <div>
+        <div className="analyzeTodo ">
           <div>총 할 일 개수 : {totalCount} ,</div>
           <div>
             완료된 일 : {doneCount} , 미완료 할 일 : {dontCount} ,
