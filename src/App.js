@@ -80,7 +80,7 @@ function App() {
         id: idRef.current, //식별자,idRef로 받음.
         checked: false, //bool 완료 여부
         content, // content: content 변수명 : 변수값, string 할 일
-        createDate: new Date().getTime(), //timestamp 생성 시간
+        createDate: moment().format('YYYY-MM-DD'), //timestamp 생성 시간
       },
     });
     idRef.current += 1; // 식별자 번호를 변경
