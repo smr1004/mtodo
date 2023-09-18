@@ -23,7 +23,7 @@ function Header() {
   console.log('헤더 리랜더링');
   return (
     <div className="Header">
-      <h2> 일정 관리 </h2>
+      <h2> 하루 살이 일정 관리 </h2>
       <h3>
         <span style={{ color: 'rgba(128,0,0)' }}>오늘 날짜 : </span>
         {new Date().toLocaleDateString()}
