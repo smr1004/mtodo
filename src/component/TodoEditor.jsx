@@ -41,7 +41,8 @@ function TodoEditor() {
           onKeyDown={onKeyDownHandler}
           type="text"
           date={moment().format('YYYY-MM-DD')}
-          placeholder="할 일을 입력하세요 .창을 닫으면 기록은 삭제되니 주의 요망y."
+          placeholder="할 일을 입력하세요 .
+          창을 닫으면 기록은 삭제되니 주의 요망y."
         />
         <button onClick={onSubmitHandler}>추가</button>
       </div>
