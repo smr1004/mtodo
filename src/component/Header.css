@@ -5,26 +5,22 @@
   border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
   box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.4) 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px;
   padding: 10px;
-  background-color: aqua;
   color: rgb(36, 3, 255);
   margin-bottom: 0;
+  background-color: aqua;
+  background: radial-gradient(white, rgba(0, 255, 255, 0.398), rgb(34, 5, 165));
 }
-
 .Header h3 {
   font: 1.15rem sans-serif;
-  color: rgb(18, 2, 163);
+  color: rgb(213, 3, 3);
   padding: 10px;
   margin-top: auto;
   margin-bottom: 0;
 }
-
-.Header .grad {
-  background-color: aqua;
-  background: radial-gradient(white, aqua, blue);
-}
-.Header input [type='text'] {
+/* .Header input [type='text'] { 
   font-family: 1em Verdana, Geneva, Tahoma, sans-serif;
   color: blue;
 }
+ */
