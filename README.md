@@ -93,7 +93,26 @@ ReadMe.md 작성 어떻게 할 지 고민하다가 이렇게 메모 한다.
                     - 터미널이 powershell인 경우 cmd로 새로 열어주세요
             - 프로젝트 초기화 (초기화되어있다면 생략)
                 - `firebase init`
-                    - 질문 답변
-                    --
+                    - 질문 답변----------------------
+                    --Are you ready to proceed (Y/n) y
+# 위 아래 화살표로 이동, 스페이스로 선택
+(*) Hosting: Configure file Firebase Hosting and (optionally) set up GitHub Action deploys
+
+# 기존 프로젝트 선택 => 파이어베이스 콘솔에서 만든 프로젝트 선택
+Use a existing project
+
+# 호스팅할 index.html 폴더 선택 => build 입력
+? What do you want to use as your public directory? build
+
+# SPA(싱글페이지앱) 여부 선택 => y
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+
+# 배포 자동화 여부 => n
+? Set up automatic builds and deploys with GitHub? No
+
+# index.html 덮어쓰기 여부 => n
+? File build/index.html already exists. Overwrite? No
+
+
                     - 빌드하고 배포하기
-    - `npm run build && firebase deploy`-->
+    - `npm run build && firebase deploy`     : 끝 -->
