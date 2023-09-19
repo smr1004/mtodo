@@ -20,7 +20,7 @@ function Header() {
     setDate(event.target.value);
   };
 
-  console.log('헤더 리랜더링');
+  // console.log('헤더 리랜더링');
   return (
     <div className="Header">
       <h2>하루살이 일정 관리</h2>
