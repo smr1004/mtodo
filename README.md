@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- 2.23.9.19(화)
+ReadMe.md 작성 어떻게 할 지 고민하다가 이렇게 메모 한다.
+1.프로젝트하라고 해서 무엇을 할지 실력이 없어 무엇을 해도 고민이어서 쉽게 접할 수 있는 것으로 TodoList해 보았다.News는 글자체 바꿔보고 끝.ㅋㅋ
+2.TodoList와 카렌더에 일정 기록 ,사진 업로드 ,팝업창, 일기장 기능까지 추가해 볼려고 했으나 실력이 미비하여 완성은 다음으로 미완성으로 마무리했다.  -->
