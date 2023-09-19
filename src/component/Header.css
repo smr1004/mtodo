@@ -20,6 +20,11 @@
   margin-bottom: 0;
 }
 
-.Header input {
+.Header .grad {
+  background-color: aqua;
+  background: radial-gradient(white, aqua, blue);
+}
+.Header input [type='text'] {
   font-family: 1em Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
 }
