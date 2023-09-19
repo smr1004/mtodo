@@ -72,4 +72,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- 2.23.9.19(화)
 ReadMe.md 작성 어떻게 할 지 고민하다가 이렇게 메모 한다.
 1.프로젝트하라고 해서 무엇을 할지 실력이 없어 무엇을 해도 고민이어서 쉽게 접할 수 있는 것으로 TodoList해 보았다.News는 글자체 바꿔보고 끝.ㅋㅋ
-2.TodoList와 카렌더에 일정 기록 ,사진 업로드 ,팝업창, 일기장 기능까지 추가해 볼려고 했으나 실력이 미비하여 완성은 다음으로 미완성으로 마무리했다.  -->
+2.TodoList와 카렌더에 일정 기록 ,사진 업로드 ,팝업창, 일기장 기능까지 추가해 볼려고 했으나 실력이 미비하여 완성은 다음으로 미완성으로 마무리했다.
+3.Firebase/git
+ https://firebase.google.com/
+  - **React 앱 배포하기**
+    - **Firebase로 배포하기**
+        - Firebase 홈페이지에서
+            - [https://firebase.google.com/](https://firebase.google.com/?hl=ko)
+                - 시작하기 또는 콘솔 클릭
+                - 1) 프로젝트 추가 또는 2) 기존 프로젝트 선택
+                    - 프로젝트 이름 정하고 계속
+                    - Google 애널릭티스 사용설정 해제하고 프로젝트 만들기
+                - 빌드 > Hosting > 시작하기
+        - 프로젝트 폴더 CLI(명령줄 인터페이스)에서
+            - Firebase CLI 설치하기 (설치되어있다면 생략)
+                - `npm install -g firebase-tools`
+            - 로그인하기 (로그인되어있다면 생략)
+                - `firebase login`
+                - ⚠️ 윈도우 명령줄에서 로그인이 잘 되지 않는다면?
+                    - 터미널이 powershell인 경우 cmd로 새로 열어주세요
+            - 프로젝트 초기화 (초기화되어있다면 생략)
+                - `firebase init`
+                    - 질문 답변
+                    --
+                    - 빌드하고 배포하기
+    - `npm run build && firebase deploy`-->
