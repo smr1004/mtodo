@@ -19,3 +19,7 @@
   margin-top: auto;
   margin-bottom: 0;
 }
+
+.Header input {
+  font-family: 1em Verdana, Geneva, Tahoma, sans-serif;
+}
